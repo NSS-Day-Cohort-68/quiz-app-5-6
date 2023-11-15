@@ -4,7 +4,12 @@ const readlineSync = require("readline-sync");
 function askQuestion(questionObj, userScore) {}
 
 // Function to check the user's answer. Allow answer to ignore casing of correct answer. return a boolean
-function checkAnswer(userAnswer, correctAnswer) {}
+function checkAnswer(userAnswer, correctAnswer) {
+        // change strings to lowercase
+        // is the userAnswer the same as correctAnswer?
+        //if they are the same return true, else return false
+  
+}
 
 // Function to run the quiz
 function runQuiz(quizQuestions) {
