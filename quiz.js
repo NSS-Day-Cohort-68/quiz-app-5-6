@@ -34,6 +34,12 @@ function runQuiz(quizQuestions) {
   let userScore = 0;
 
   // Iterate through the questions
+  for (const question of quizQuestions) {
+// for each question, run ask question function
+// take result of ask question and update score
+userScore = askQuestion(question, userScore)
+
+  }
 
   // Display final score
   console.log(
