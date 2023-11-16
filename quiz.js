@@ -8,7 +8,8 @@ function checkAnswer(userAnswer, correctAnswer) {
         // change strings to lowercase
         // is the userAnswer the same as correctAnswer?
         //if they are the same return true, else return false
-  
+        return  userAnswer.toLowerCase() === correctAnswer.toLowerCase()
+
 }
 
 // Function to run the quiz
