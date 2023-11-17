@@ -1,4 +1,5 @@
-const { runQuiz } = require("./quiz.js");
+const { runQuiz, randomizeQuestions } = require("./quiz.js");
 const quizQuestions = require("./data.js");
 
-runQuiz(quizQuestions); 
+const random = randomizeQuestions(quizQuestions)
+runQuiz(random); 
