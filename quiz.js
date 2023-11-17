@@ -50,4 +50,22 @@ userScore = askQuestion(question, userScore)
   );
 }
 
-module.exports = { askQuestion, checkAnswer, runQuiz };
+//function that takes the quiz questions as an input. Returns 5 random questions from that.
+
+const randomizeQuestions = (quizQuestions) => {
+  //create empty array for randomized
+  const randomized = []
+  // iterate 5 times
+    for(let counter = 0; counter < 5; counter++) {
+      //get random number
+      const randomNumber = Math.floor(Math.random() * quizQuestions.length)
+      // use random number to get quiz question from quizQuestions.
+      const question = quizQuestions.splice(randomNumber, 1)[0]
+      // add question to randomQuestions
+      randomized.push(question)
+    }
+    return randomized
+      //return 5 random questions
+    }
+
+module.exports = { askQuestion, checkAnswer, runQuiz, randomizeQuestions };
